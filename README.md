@@ -1,2 +1,2 @@
-# quabbagch
-The exciting game of Quabbagch.
+# Quabbigch
+The exciting game of Quabbigch.
