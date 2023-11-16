@@ -1,0 +1,41 @@
+chasers:left winger(LW), tussler(TL), right winger(RW)
+beaters: left beater(LB), right beater(RB)
+keeper=goalie(GL)
+seeker(SK)
+
+shuffle the players.
+show the order to the players
+the players may them spend <N> action points to move up <N> positions or 0 action points to move down <N> postions. move them from the fist player to last
+while continue < move_queue.size():
+	
+	move(, continue.desired_change)
+	continue.desired_change = 0 
+	#if we're not moving it moving it ahead
+	if desired < 0:
+		continue = continue + 1
+		
+
+on the player's turn reveal the queue posiotn of the players surrounding hym.
+
+----
+wind direction 20deg of from grid directiongs
+
+if the ball would move to the tile is the counter to the direction of the wind it instead.
+
+2/6 that is will move 1 clockwize to the wind
+2/6 that is will move 1 counter clockwize to the wind
+1/6 that is will move 2 clockwize to the wind
+1/6 that is will move 2 counter clockwize to the wind
+
+---
+
+Beaters hit a Bludgers they chose a direction for the ball to move itn. 1/6 ther is goes in the directiion. 1/6 that it returns to moving normaliy. 2/3 that it moves to the tile 1 counter clockwise to the directing, 2/3 that is move to the tile 1 clockwise to the direction
+----
+Beater can target a hex
+find shortest path to the target from curret location
+if new_direction != old_direction:
+	if not aim_skill_check():
+		return_to_moving_normally
+		
+----
+target player, same as target hex but also test aim skill every time the player changes direction
